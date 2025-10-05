@@ -1,0 +1,5 @@
+# Minimal Spec Kit configuration for Villas.co.th
+version: 1
+project_name: "Villas.co.th Landing"
+specs_dir: "specs/landing"
+default_agent: "copilot"  # change to claude | gemini | cursor as preferred

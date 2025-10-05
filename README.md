@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Villas.co.th — Spec Kit Scaffold (Landing Page)
 
-## Getting Started
+This repository contains **Spec-Driven Development** artifacts for building the **Villas.co.th** landing page using a brand-new `create-next-app` project with **Tailwind**, **shadcn/ui**, and **Framer Motion**.
 
-First, run the development server:
+> ⚠️ No runtime code is included here — only specs, plans, tasks, and prompts for Spec Kit & your coding agents (Copilot, Claude Code, Gemini, etc.).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Quick Start
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1) **Install Spec Kit's CLI (`specify`)**  
+   ```bash
+   uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2) **Initialize the workspace (optional if you already have a Next app)**  
+   ```bash
+   mkdir villas-landing && cd villas-landing
+   specify init .
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3) **Drop this folder into the repo** (or unzip into `/specs/landing`) and run through the slash-commands in `specs/landing/05-prompts.md`.
 
-## Learn More
+4) **Use the task breakdown** in `specs/landing/04-tasks.md` to drive your agents (VS Code + Claude Code/Copilot/Gemini).
 
-To learn more about Next.js, take a look at the following resources:
+5) **Ship a beautiful "Coming Soon" landing** aligned to the business goals.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Last updated:** 2025-10-05
