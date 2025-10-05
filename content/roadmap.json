@@ -1,0 +1,30 @@
+{
+  "title": "Coming soon",
+  "subtitle": "The Villas.co.th rollout roadmap through early 2026.",
+  "milestones": [
+    {
+      "label": "Q4 2025",
+      "title": "Founding waitlist",
+      "description": "Invite-only access for luxury buyers and curated partner network onboarding.",
+      "status": "active"
+    },
+    {
+      "label": "Q1 2026",
+      "title": "Marketplace MVP",
+      "description": "Phuket and Samui listings live with AI concierge, escrow workflows, and multi-language support.",
+      "status": "upcoming"
+    },
+    {
+      "label": "Q2 2026",
+      "title": "Data & diligence suite",
+      "description": "Launch compliance dashboard, digital doc vault, and developer sales analytics.",
+      "status": "upcoming"
+    },
+    {
+      "label": "H2 2026",
+      "title": "National expansion",
+      "description": "Extend to Hua Hin and Chiang Mai with partner onboarding playbooks and community programs.",
+      "status": "future"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Who we serve",
+  "subtitle": "Tailored pathways for every partner in Thailand's villa ecosystem.",
+  "personas": [
+    {
+      "role": "Buyers & monthly renters",
+      "valueProp": "Reserve fully verified villas with escrow, multilingual legal support, and AI concierge follow-through.",
+      "ctaLabel": "Join waitlist",
+      "ctaHref": "#join",
+      "icon": "Users"
+    },
+    {
+      "role": "Property owners",
+      "valueProp": "List seamlessly with duplicate protection, professional staging, and pre-screened leads.",
+      "ctaLabel": "Apply to partner",
+      "ctaHref": "#partner",
+      "icon": "Home"
+    },
+    {
+      "role": "Agencies & brokers",
+      "valueProp": "Plug into an escrow-backed, marketing-ready inventory pipeline that keeps you in the loop.",
+      "ctaLabel": "Partner with us",
+      "ctaHref": "#partner",
+      "icon": "Handshake"
+    },
+    {
+      "role": "Developers",
+      "valueProp": "Showcase new builds to a qualified global audience with legal readiness kits and sales ops support.",
+      "ctaLabel": "Share your projects",
+      "ctaHref": "#partner",
+      "icon": "Building2"
+    },
+    {
+      "role": "Law partners",
+      "valueProp": "Collaborate on due diligence, SPAs, and BOI or lease structures for international clients.",
+      "ctaLabel": "Join the network",
+      "ctaHref": "#partner",
+      "icon": "Scale"
+    }
+  ]
+}

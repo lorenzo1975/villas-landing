@@ -1,0 +1,11 @@
+{
+  "features": {
+    "showTrust": true,
+    "showPress": true,
+    "showRoadmap": true,
+    "showDarkModeToggle": true
+  },
+  "analytics": {
+    "cookieConsent": true
+  }
+}

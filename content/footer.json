@@ -1,0 +1,37 @@
+{
+  "companyName": "Villas.co.th",
+  "tagline": "Trusted luxury villa marketplace for Thailand",
+  "links": [
+    {
+      "label": "Privacy",
+      "href": "/privacy"
+    },
+    {
+      "label": "Terms",
+      "href": "/terms"
+    },
+    {
+      "label": "Partner program",
+      "href": "#partner"
+    },
+    {
+      "label": "Waitlist",
+      "href": "#join"
+    }
+  ],
+  "contact": {
+    "email": "hello@villas.co.th",
+    "phone": "+66 (0)2 123 4567",
+    "address": "Sukhumvit 39, Bangkok"
+  },
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/villas.co.th"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/company/villas-th"
+    }
+  ]
+}

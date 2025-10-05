@@ -1,0 +1,41 @@
+{
+  "title": "Trust & Safety, built-in",
+  "subtitle": "Every villa is screened across legal, financial, and operational touchpoints before it ever appears on Villas.co.th.",
+  "items": [
+    {
+      "title": "Legal verification",
+      "description": "Title deed, blue book, and company share review with licensed Thai lawyers.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Secure escrow",
+      "description": "Funds stay in escrow with tier-1 banking partners until contracts are fully executed.",
+      "icon": "Building"
+    },
+    {
+      "title": "Quality control",
+      "description": "On-site inspections with 200-point readiness checklist and digital twin documentation.",
+      "icon": "Stars"
+    },
+    {
+      "title": "Data protection",
+      "description": "SOC2-aligned storage, granular permissions, and privacy-by-design workflows.",
+      "icon": "Shield"
+    }
+  ],
+  "note": "Backed by Thai legal advisors and escrow partners; audited annually.",
+  "partners": [
+    {
+      "name": "Bangkok Escrow Group",
+      "type": "Escrow"
+    },
+    {
+      "name": "Siam Legal Advisory",
+      "type": "Legal"
+    },
+    {
+      "name": "Azure Villa Services",
+      "type": "Operations"
+    }
+  ]
+}

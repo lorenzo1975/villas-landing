@@ -1,0 +1,26 @@
+{
+  "title": "How Villas.co.th works",
+  "subtitle": "A guided journey from discovery to move-in, architected for trust.",
+  "steps": [
+    {
+      "title": "Search verified listings",
+      "description": "Browse curated villas with legal checks, zoning validation, and duplicate prevention built in.",
+      "icon": "Search"
+    },
+    {
+      "title": "Tour with local experts",
+      "description": "Request virtual or in-person viewings managed by our partner agents and dedicated concierge.",
+      "icon": "MapPinned"
+    },
+    {
+      "title": "Secure with escrow",
+      "description": "Digitally review contracts, complete due diligence, and release funds only when milestones clear.",
+      "icon": "FileCheck"
+    },
+    {
+      "title": "Move in seamlessly",
+      "description": "Handle utilities, ownership transfers, and long-stay services with ongoing support from our team.",
+      "icon": "KeyRound"
+    }
+  ]
+}

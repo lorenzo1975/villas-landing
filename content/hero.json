@@ -1,0 +1,31 @@
+{
+  "headline": "A trusted way to secure your next Thai villa",
+  "subheadline": "Villas.co.th pairs legal-grade verification with concierge support so you can discover, reserve, and move into Phuket, Samui, and Hua Hin villas with confidence.",
+  "ctaPrimary": {
+    "label": "Join the Waitlist",
+    "href": "#join"
+  },
+  "ctaSecondary": {
+    "label": "Partner With Us",
+    "href": "#partner"
+  },
+  "badges": [
+    "Escrow-backed bookings",
+    "Licensed local experts",
+    "AI concierge 24/7"
+  ],
+  "stats": [
+    {
+      "label": "Verified villas in onboarding",
+      "value": "120+"
+    },
+    {
+      "label": "Average owner response time",
+      "value": "<12h"
+    },
+    {
+      "label": "Regions launching first",
+      "value": "Phuket | Samui | Hua Hin"
+    }
+  ]
+}

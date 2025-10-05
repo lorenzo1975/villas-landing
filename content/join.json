@@ -1,0 +1,23 @@
+{
+  "title": "Join the early program",
+  "subtitle": "Tell us how you want to engage and we will tailor the next steps for you.",
+  "roles": [
+    "Buyer",
+    "Long-stay renter",
+    "Owner",
+    "Agency",
+    "Developer",
+    "Law partner"
+  ],
+  "waitlist": {
+    "title": "Founding buyer & renter waitlist",
+    "description": "Get first access to verified villas, concierge previews, and launch updates.",
+    "privacy": "By joining you agree to our Privacy Policy and understand we will reach out with curated opportunities.",
+    "cta": "Request access"
+  },
+  "partner": {
+    "title": "Partner with Villas.co.th",
+    "description": "Owners, agencies, developers, and legal experts can share a few details and our partnerships team will be in touch within 24 hours.",
+    "cta": "Submit interest"
+  }
+}

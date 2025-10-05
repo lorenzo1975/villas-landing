@@ -1,0 +1,30 @@
+{
+  "title": "About Villas.co.th",
+  "subtitle": "Thai-founded, globally experienced real estate operators bringing trust to luxury villa transactions.",
+  "body": "We are building the first end-to-end, escrow-backed marketplace dedicated to Thai luxury villas. Our founding team spans proptech, hospitality, and cross-border legal advisory with offices in Bangkok and Phuket.",
+  "pressList": [
+    "Bangkok Post",
+    "Chiang Mai News",
+    "PropertyGuru",
+    "Skift",
+    "Techsauce"
+  ],
+  "contact": {
+    "email": "press@villas.co.th",
+    "cta": "Request press kit"
+  },
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/villas.co.th"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/company/villas-th"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://youtube.com/@villas-th"
+    }
+  ]
+}
