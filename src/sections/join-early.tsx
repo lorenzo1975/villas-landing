@@ -8,22 +8,27 @@ const content = getJoinContent();
 
 export function JoinSection() {
   return (
-    <section className="section-spacing" id="join">
-      <div className="container space-y-12">
+    <section className="section-spacing relative overflow-hidden bg-secondary" id="join">
+      <div aria-hidden className="absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(189,171,255,0.24),transparent_65%)]" />
+        <div className="absolute inset-x-[-25%] top-[-32%] h-[420px] bg-[radial-gradient(circle_at_top,rgba(255,205,145,0.22),transparent_70%)] blur-[150px]" />
+      </div>
+      <div className="container relative space-y-16 text-secondary-foreground">
         <SectionHeading
           eyebrow="Join"
           title={content.title}
           description={content.subtitle}
           align="center"
+          tone="inverted"
         />
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-10 lg:grid-cols-2">
           <FadeIn>
-            <div className="h-full rounded-3xl border border-border/60 bg-white/90 p-8 shadow-sm backdrop-blur lg:p-10">
-              <div className="mb-8 space-y-3">
-                <h3 className="text-2xl font-semibold text-foreground">
+            <div className="rounded-[2.75rem] border border-white/45 bg-white/95 p-10 shadow-[0_30px_90px_rgba(88,63,140,0.25)] backdrop-blur-xl lg:p-12">
+              <div className="mb-10 space-y-4">
+                <h3 className="font-serif text-3xl text-secondary">
                   {content.waitlist.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="max-w-md text-sm leading-relaxed text-foreground/70">
                   {content.waitlist.description}
                 </p>
               </div>
@@ -31,12 +36,15 @@ export function JoinSection() {
             </div>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <div className="h-full rounded-3xl border border-border/60 bg-white/90 p-8 shadow-sm backdrop-blur lg:p-10" id="partner">
-              <div className="mb-8 space-y-3">
-                <h3 className="text-2xl font-semibold text-foreground">
+            <div
+              className="rounded-[2.75rem] border border-white/30 bg-white/85 p-10 shadow-[0_30px_90px_rgba(88,63,140,0.22)] backdrop-blur-xl lg:p-12"
+              id="partner"
+            >
+              <div className="mb-10 space-y-4">
+                <h3 className="font-serif text-3xl text-secondary">
                   {content.partner.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="max-w-md text-sm leading-relaxed text-foreground/70">
                   {content.partner.description}
                 </p>
               </div>

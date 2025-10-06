@@ -1,6 +1,5 @@
-﻿import { Circle, FileCheck, KeyRound, MapPinned, Search } from "lucide-react";
+import { Circle, FileCheck, KeyRound, MapPinned, Search } from "lucide-react";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { FadeIn } from "@/components/shared/fade-in";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { getHowItWorksContent } from "@/lib/content";
@@ -18,30 +17,32 @@ type IconKey = keyof typeof iconMap;
 
 export function HowItWorksSection() {
   return (
-    <section className="section-spacing" id="how">
-      <div className="container space-y-12">
+    <section className="section-spacing relative overflow-hidden" id="how">
+      <div aria-hidden className="absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(194,175,255,0.18),transparent_65%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-white/65 via-white/30 to-transparent" />
+      </div>
+      <div className="container relative space-y-16">
         <SectionHeading
           eyebrow="Process"
           title={content.title}
           description={content.subtitle}
           align="center"
         />
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {content.steps.map((step, index) => {
             const IconComponent = iconMap[step.icon as IconKey] ?? Circle;
             return (
               <FadeIn delay={index * 0.08} key={step.title}>
-                <Card className="h-full bg-white/80 shadow-sm backdrop-blur">
-                  <CardHeader className="space-y-4">
-                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-primary">
-                      <IconComponent className="h-6 w-6" />
-                    </div>
-                    <CardTitle>{step.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription>{step.description}</CardDescription>
-                  </CardContent>
-                </Card>
+                <div className="group flex h-full flex-col rounded-[2.5rem] border border-white/50 bg-white/80 p-8 shadow-[0_24px_70px_rgba(88,63,140,0.12)] backdrop-blur-xl transition hover:-translate-y-2 hover:shadow-[0_32px_90px_rgba(88,63,140,0.18)]">
+                  <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary/20 bg-primary/10 text-primary">
+                    <IconComponent className="h-6 w-6" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="font-serif text-2xl text-secondary">{step.title}</h3>
+                    <p className="text-sm leading-relaxed text-foreground/70">{step.description}</p>
+                  </div>
+                </div>
               </FadeIn>
             );
           })}

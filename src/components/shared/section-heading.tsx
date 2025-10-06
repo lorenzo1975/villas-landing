@@ -1,4 +1,4 @@
-﻿import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 type SectionHeadingProps = {
   eyebrow?: string;
@@ -6,6 +6,7 @@ type SectionHeadingProps = {
   description?: string;
   align?: "left" | "center";
   className?: string;
+  tone?: "default" | "inverted";
 };
 
 export function SectionHeading({
@@ -13,26 +14,42 @@ export function SectionHeading({
   title,
   description,
   align = "left",
-  className
+  className,
+  tone = "default"
 }: SectionHeadingProps) {
+  const isInverted = tone === "inverted";
+
   return (
     <div
       className={cn(
-        "mx-auto max-w-3xl space-y-4",
+        "mx-auto max-w-3xl space-y-6",
         align === "center" && "text-center",
+        isInverted ? "text-secondary-foreground" : "text-foreground",
         className
       )}
     >
       {eyebrow ? (
-        <span className="inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+        <span
+          className={cn(
+            "text-[0.7rem] font-semibold uppercase tracking-[0.45em]",
+            isInverted ? "text-secondary-foreground/70" : "text-primary/80"
+          )}
+        >
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+      <h2 className="font-serif text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl">
         {title}
       </h2>
       {description ? (
-        <p className="text-lg text-muted-foreground">{description}</p>
+        <p
+          className={cn(
+            "text-lg sm:text-xl",
+            isInverted ? "text-secondary-foreground/80" : "text-foreground/70"
+          )}
+        >
+          {description}
+        </p>
       ) : null}
     </div>
   );

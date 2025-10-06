@@ -1,4 +1,4 @@
-﻿import { SectionHeading } from "@/components/shared/section-heading";
+import { SectionHeading } from "@/components/shared/section-heading";
 import { FadeIn } from "@/components/shared/fade-in";
 import { getRoadmapContent } from "@/lib/content";
 import { isFeatureEnabled } from "@/lib/feature-flags";
@@ -6,9 +6,9 @@ import { isFeatureEnabled } from "@/lib/feature-flags";
 const content = getRoadmapContent();
 
 const statusStyles: Record<string, string> = {
-  active: "bg-primary/15 text-primary",
-  upcoming: "bg-secondary/15 text-secondary",
-  future: "bg-muted text-muted-foreground"
+  active: "bg-primary text-primary-foreground",
+  upcoming: "bg-secondary/80 text-secondary-foreground",
+  future: "bg-white/45 text-foreground/60"
 };
 
 export function RoadmapSection() {
@@ -17,24 +17,26 @@ export function RoadmapSection() {
   }
 
   return (
-    <section className="section-spacing" id="roadmap">
-      <div className="container space-y-12">
+    <section className="section-spacing relative overflow-hidden" id="roadmap">
+      <div aria-hidden className="absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(189,171,255,0.2),transparent_68%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-white/65 via-white/25 to-transparent" />
+      </div>
+      <div className="container relative space-y-16">
         <SectionHeading
           eyebrow="Roadmap"
           title={content.title}
           description={content.subtitle}
           align="center"
         />
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2">
           {content.milestones.map((milestone, index) => (
             <FadeIn delay={index * 0.1} key={milestone.title}>
-              <div className="rounded-3xl border border-border/60 bg-white p-6 shadow-sm">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-semibold text-muted-foreground">
-                    {milestone.label}
-                  </span>
+              <div className="group rounded-[2.5rem] border border-white/55 bg-white/85 p-10 shadow-[0_26px_80px_rgba(88,63,140,0.14)] backdrop-blur-xl transition hover:-translate-y-2 hover:shadow-[0_34px_100px_rgba(88,63,140,0.2)]">
+                <div className="flex items-center justify-between gap-4 uppercase tracking-[0.3em] text-xs text-foreground/55">
+                  <span>{milestone.label}</span>
                   <span
-                    className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                    className={`inline-flex items-center rounded-full px-4 py-1 text-[0.65rem] font-semibold ${
                       statusStyles[milestone.status] ?? statusStyles.future
                     }`}
                   >
@@ -45,10 +47,10 @@ export function RoadmapSection() {
                       : "Future"}
                   </span>
                 </div>
-                <h3 className="mt-4 text-xl font-semibold text-foreground">
+                <h3 className="mt-8 font-serif text-2xl text-secondary">
                   {milestone.title}
                 </h3>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="mt-4 text-sm leading-relaxed text-foreground/70">
                   {milestone.description}
                 </p>
               </div>
