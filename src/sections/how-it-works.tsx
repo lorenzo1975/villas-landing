@@ -39,7 +39,7 @@ export function HowItWorksSection() {
                     <IconComponent className="h-6 w-6" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="font-serif text-2xl text-secondary">{step.title}</h3>
+                    <h3 className="font-sans text-2xl text-secondary">{step.title}</h3>
                     <p className="text-sm leading-relaxed text-foreground/70 dark:text-secondary-foreground/80">{step.description}</p>
                   </div>
                 </div>

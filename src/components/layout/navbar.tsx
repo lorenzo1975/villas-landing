@@ -18,6 +18,7 @@ const NAV_LINKS = [
 export function Navbar() {
   const showThemeToggle = isFeatureEnabled("showDarkModeToggle");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     if (!isMenuOpen) {
@@ -32,13 +33,29 @@ export function Navbar() {
     return () => document.removeEventListener("keydown", handleEscape);
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header className="sticky top-0 z-50 pt-6 lg:pt-8" id="top">
       <div className="container">
-        <div className="flex items-center justify-between rounded-full border border-white/40 bg-white/80 px-5 py-3 shadow-[0_20px_70px_rgba(88,63,140,0.16)] backdrop-blur-2xl dark:border-white/12 dark:bg-[rgba(30,20,50,0.82)] dark:shadow-[0_28px_90px_rgba(0,0,0,0.55)]">
+        <div className={`flex items-center justify-between px-5 py-3 transition-colors duration-300 ${scrolled ? "bg-white/80 backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_70px_rgba(88,63,140,0.16)] dark:border-white/12 dark:bg-[rgba(30,20,50,0.82)] dark:shadow-[0_28px_90px_rgba(0,0,0,0.55)]" : ""}`}>
           <Link
             href="#top"
-            className="font-serif text-2xl font-semibold uppercase tracking-[0.3em] text-primary"
+            className="font-sans text-2xl font-semibold uppercase tracking-[0.3em] text-primary"
           >
             Villas.co.th
           </Link>

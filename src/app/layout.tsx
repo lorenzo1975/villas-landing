@@ -9,13 +9,13 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 const manrope = Manrope({
   variable: "--font-sans",
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
 });
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://villas.co.th";
@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${manrope.variable} ${playfair.variable} bg-background text-foreground`}
+        className={`${manrope.variable} ${playfair.variable} text-foreground`}
       >
         <a
           href="#main"

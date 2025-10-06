@@ -42,7 +42,7 @@ export function AudienceSection() {
                     <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary dark:border-primary/35 dark:bg-primary/25 dark:text-primary/90">
                       <IconComponent className="h-6 w-6" />
                     </div>
-                    <CardTitle className="font-serif text-2xl text-secondary">
+                    <CardTitle className="font-sans text-2xl text-secondary">
                       {persona.role}
                     </CardTitle>
                   </CardHeader>

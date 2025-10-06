@@ -8,7 +8,7 @@ export function FooterLinks() {
   return (
     <div className="grid gap-12 text-sm text-secondary-foreground/75 lg:grid-cols-[1.4fr_1fr_1fr]">
       <div className="space-y-4">
-        <p className="font-serif text-2xl font-semibold text-secondary-foreground">
+        <p className="font-sans text-2xl font-semibold text-secondary-foreground">
           {footerContent.companyName}
         </p>
         <p className="max-w-sm leading-relaxed text-secondary-foreground/70">

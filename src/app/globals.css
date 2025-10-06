@@ -3,25 +3,25 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-background: 276 38% 98%;
-  --color-foreground: 263 27% 16%;
+  --color-background: 0 0% 100%;
+  --color-foreground: 0 0% 10%;
   --color-card: 0 0% 100%;
-  --color-card-foreground: 263 27% 16%;
+  --color-card-foreground: 0 0% 10%;
   --color-popover: 0 0% 100%;
-  --color-popover-foreground: 263 27% 16%;
-  --color-primary: 268 74% 60%;
-  --color-primary-foreground: 276 100% 96%;
-  --color-secondary: 267 54% 19%;
-  --color-secondary-foreground: 276 100% 96%;
-  --color-muted: 272 28% 92%;
-  --color-muted-foreground: 263 18% 42%;
-  --color-accent: 40 76% 56%;
-  --color-accent-foreground: 45 92% 95%;
-  --color-destructive: 4 72% 56%;
-  --color-destructive-foreground: 0 0% 96%;
-  --color-border: 270 22% 86%;
-  --color-input: 270 22% 86%;
-  --color-ring: 268 74% 60%;
+  --color-popover-foreground: 0 0% 10%;
+  --color-primary: 45 100% 95%;
+  --color-primary-foreground: 0 0% 10%;
+  --color-secondary: 45 100% 90%;
+  --color-secondary-foreground: 0 0% 10%;
+  --color-muted: 0 0% 95%;
+  --color-muted-foreground: 0 0% 40%;
+  --color-accent: 45 100% 95%;
+  --color-accent-foreground: 0 0% 10%;
+  --color-destructive: 0 70% 50%;
+  --color-destructive-foreground: 0 0% 100%;
+  --color-border: 0 0% 90%;
+  --color-input: 0 0% 90%;
+  --color-ring: 45 100% 95%;
   --radius-lg: 2.75rem;
   --radius-md: calc(var(--radius-lg) - 10px);
   --radius-sm: calc(var(--radius-lg) - 18px);
@@ -34,18 +34,13 @@
 
   body {
     background-color: hsl(var(--color-background));
-    background-image: radial-gradient(circle at 18% 18%, hsla(268, 100%, 92%, 0.55), transparent 55%),
-      radial-gradient(circle at 84% -10%, hsla(254, 62%, 26%, 0.2), transparent 45%),
-      linear-gradient(180deg, hsla(276, 38%, 98%, 1) 0%, hsla(0, 0%, 100%, 1) 60%, hsla(276, 38%, 98%, 1) 100%);
     color: hsl(var(--color-foreground));
     -webkit-font-smoothing: antialiased;
   }
 
   .dark body {
-    background-color: hsl(var(--color-background));
-    background-image: radial-gradient(circle at 16% 16%, hsla(270, 86%, 32%, 0.6), transparent 55%),
-      radial-gradient(circle at 86% -12%, hsla(250, 58%, 20%, 0.65), transparent 45%),
-      linear-gradient(180deg, hsla(252, 45%, 10%, 1) 0%, hsla(250, 44%, 14%, 1) 55%, hsla(256, 42%, 12%, 1) 100%);
+    background-color: transparent;
+    background-image: linear-gradient(135deg, hsl(180 80% 40% / 0.3), hsl(300 100% 50% / 0.3));
     color: hsl(var(--color-foreground));
   }
 
@@ -86,21 +81,21 @@
   }
 
   .section-spacing {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
   }
 
   @media (min-width: 768px) {
     .section-spacing {
-      padding-top: 7rem;
-      padding-bottom: 7rem;
+      padding-top: 10.5rem;
+      padding-bottom: 10.5rem;
     }
   }
 
   @media (min-width: 1280px) {
     .section-spacing {
-      padding-top: 8.5rem;
-      padding-bottom: 8.5rem;
+      padding-top: 12.75rem;
+      padding-bottom: 12.75rem;
     }
   }
 
@@ -157,25 +152,25 @@
 }
 
 .dark {
-  --color-background: 253 42% 9%;
-  --color-foreground: 44 67% 94%;
-  --color-card: 255 32% 14%;
-  --color-card-foreground: 44 67% 94%;
-  --color-popover: 255 32% 14%;
-  --color-popover-foreground: 44 67% 94%;
-  --color-primary: 268 82% 67%;
-  --color-primary-foreground: 253 42% 10%;
-  --color-secondary: 240 21% 24%;
-  --color-secondary-foreground: 44 67% 94%;
-  --color-muted: 252 30% 20%;
-  --color-muted-foreground: 268 52% 82%;
-  --color-accent: 41 84% 60%;
-  --color-accent-foreground: 253 42% 10%;
-  --color-destructive: 4 75% 58%;
-  --color-destructive-foreground: 0 0% 98%;
-  --color-border: 252 28% 28%;
-  --color-input: 252 28% 28%;
-  --color-ring: 268 82% 67%;
+  --color-background: 180 10% 8%;
+  --color-foreground: 180 10% 85%;
+  --color-card: 180 10% 12%;
+  --color-card-foreground: 180 10% 85%;
+  --color-popover: 180 10% 12%;
+  --color-popover-foreground: 180 10% 85%;
+  --color-primary: 330 80% 60%;
+  --color-primary-foreground: 330 80% 98%;
+  --color-secondary: 180 80% 40%;
+  --color-secondary-foreground: 180 80% 98%;
+  --color-muted: 180 10% 18%;
+  --color-muted-foreground: 180 10% 70%;
+  --color-accent: 330 80% 60%;
+  --color-accent-foreground: 330 80% 98%;
+  --color-destructive: 0 70% 50%;
+  --color-destructive-foreground: 0 0% 100%;
+  --color-border: 180 10% 22%;
+  --color-input: 180 10% 22%;
+  --color-ring: 330 80% 60%;
 }
 
 [data-reduced-motion="true"] *,

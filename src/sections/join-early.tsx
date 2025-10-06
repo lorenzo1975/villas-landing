@@ -25,7 +25,7 @@ export function JoinSection() {
           <FadeIn>
             <div className="rounded-[2.75rem] border border-white/45 bg-white/95 p-10 shadow-[0_30px_90px_rgba(88,63,140,0.25)] backdrop-blur-xl lg:p-12 dark:border-white/12 dark:bg-secondary/45 dark:shadow-[0_36px_120px_rgba(0,0,0,0.5)]">
               <div className="mb-10 space-y-4">
-                <h3 className="font-serif text-3xl text-secondary dark:text-secondary-foreground">
+                <h3 className="font-sans text-3xl text-secondary dark:text-secondary-foreground">
                   {content.waitlist.title}
                 </h3>
                 <p className="max-w-md text-sm leading-relaxed text-foreground/70 dark:text-secondary-foreground/80">
@@ -41,7 +41,7 @@ export function JoinSection() {
               id="partner"
             >
               <div className="mb-10 space-y-4">
-                <h3 className="font-serif text-3xl text-secondary dark:text-secondary-foreground">
+                <h3 className="font-sans text-3xl text-secondary dark:text-secondary-foreground">
                   {content.partner.title}
                 </h3>
                 <p className="max-w-md text-sm leading-relaxed text-foreground/70 dark:text-secondary-foreground/80">

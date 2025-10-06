@@ -25,27 +25,19 @@ export function HeroSection() {
             <span className="inline-flex items-center text-xs font-semibold uppercase tracking-[0.45em] text-primary/70 dark:text-primary/60">
               Thailand luxury villas
             </span>
-            <h1 className="font-serif text-5xl leading-[1.05] text-secondary sm:text-6xl lg:text-7xl">
+            <h1 className="font-sans text-5xl leading-[1.05] text-secondary sm:text-6xl lg:text-7xl">
               {hero.headline}
             </h1>
-            <p className="max-w-xl text-lg text-foreground/75 sm:text-2xl">
+            <p className="max-w-xl text-center text-lg text-foreground/75 sm:text-2xl lg:text-left">
               {hero.subheadline}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-4 lg:justify-start">
               <Button
                 asChild
                 size="lg"
-                className="rounded-full px-8 py-6 text-base shadow-[0_28px_70px_rgba(143,109,255,0.32)] dark:shadow-[0_32px_80px_rgba(112,88,204,0.5)]"
+                className="px-8 py-6 text-base shadow-[0_28px_70px_rgba(143,109,255,0.32)] dark:shadow-[0_32px_80px_rgba(112,88,204,0.5)]"
               >
                 <Link href={hero.ctaPrimary.href}>{hero.ctaPrimary.label}</Link>
-              </Button>
-              <Button
-                asChild
-                variant="secondary"
-                size="lg"
-                className="rounded-full border border-primary/20 bg-white/75 px-8 py-6 text-base text-foreground/75 shadow-none transition hover:border-primary/30 hover:text-primary dark:border-white/12 dark:bg-secondary/60 dark:text-secondary-foreground/90 dark:hover:border-primary/35"
-              >
-                <Link href={hero.ctaSecondary.href}>{hero.ctaSecondary.label}</Link>
               </Button>
             </div>
           </FadeIn>

@@ -38,7 +38,7 @@ export function TrustSection() {
                   <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary/25 bg-primary/12 text-primary dark:border-primary/35 dark:bg-primary/20">
                     <IconComponent className="h-6 w-6" />
                   </div>
-                  <h3 className="font-serif text-2xl text-secondary dark:text-secondary-foreground">
+                  <h3 className="font-sans text-2xl text-secondary dark:text-secondary-foreground">
                     {item.title}
                   </h3>
                   <p className="mt-4 text-sm leading-relaxed text-foreground/70 dark:text-secondary-foreground/75">

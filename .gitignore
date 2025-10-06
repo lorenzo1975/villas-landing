@@ -13,8 +13,8 @@
 # testing
 /coverage
 
-# testing
-/specs/Design
+
+/specs/design
 
 # next.js
 /.next/

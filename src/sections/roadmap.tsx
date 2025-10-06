@@ -47,7 +47,7 @@ export function RoadmapSection() {
                       : "Future"}
                   </span>
                 </div>
-                <h3 className="mt-8 font-serif text-2xl text-secondary dark:text-secondary-foreground">
+                <h3 className="mt-8 font-sans text-2xl text-secondary dark:text-secondary-foreground">
                   {milestone.title}
                 </h3>
                 <p className="mt-4 text-sm leading-relaxed text-foreground/70 dark:text-secondary-foreground/80">
