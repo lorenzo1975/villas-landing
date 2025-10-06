@@ -41,6 +41,14 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  .dark body {
+    background-color: hsl(var(--color-background));
+    background-image: radial-gradient(circle at 16% 16%, hsla(270, 86%, 32%, 0.6), transparent 55%),
+      radial-gradient(circle at 86% -12%, hsla(250, 58%, 20%, 0.65), transparent 45%),
+      linear-gradient(180deg, hsla(252, 45%, 10%, 1) 0%, hsla(250, 44%, 14%, 1) 55%, hsla(256, 42%, 12%, 1) 100%);
+    color: hsl(var(--color-foreground));
+  }
+
   main {
     display: flex;
     min-height: 100vh;
@@ -113,6 +121,12 @@
     -webkit-backdrop-filter: blur(28px);
   }
 
+  .dark .frosted-card {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg, rgba(51, 37, 74, 0.92), rgba(30, 20, 50, 0.82));
+    box-shadow: 0 32px 90px -40px rgba(0, 0, 0, 0.7);
+  }
+
   .frosted-dark {
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: linear-gradient(135deg, rgba(64, 38, 110, 0.88), rgba(36, 22, 64, 0.72));
@@ -127,6 +141,12 @@
       linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(248, 244, 255, 0.85));
   }
 
+  .dark .layer-gradient {
+    background: radial-gradient(circle at top left, rgba(84, 56, 140, 0.45), transparent 55%),
+      radial-gradient(circle at bottom right, rgba(27, 18, 46, 0.6), transparent 65%),
+      linear-gradient(135deg, rgba(37, 27, 55, 0.98), rgba(24, 18, 39, 0.92));
+  }
+
   .radial-mask {
     mask-image: radial-gradient(
       circle at top,
@@ -137,25 +157,25 @@
 }
 
 .dark {
-  --color-background: 258 52% 12%;
-  --color-foreground: 276 100% 96%;
-  --color-card: 258 38% 16%;
-  --color-card-foreground: 276 100% 96%;
-  --color-popover: 258 38% 16%;
-  --color-popover-foreground: 276 100% 96%;
-  --color-primary: 268 80% 67%;
-  --color-primary-foreground: 256 36% 12%;
-  --color-secondary: 258 58% 18%;
-  --color-secondary-foreground: 276 100% 96%;
-  --color-muted: 258 36% 22%;
-  --color-muted-foreground: 276 52% 85%;
-  --color-accent: 40 76% 56%;
-  --color-accent-foreground: 258 52% 12%;
+  --color-background: 253 42% 9%;
+  --color-foreground: 44 67% 94%;
+  --color-card: 255 32% 14%;
+  --color-card-foreground: 44 67% 94%;
+  --color-popover: 255 32% 14%;
+  --color-popover-foreground: 44 67% 94%;
+  --color-primary: 268 82% 67%;
+  --color-primary-foreground: 253 42% 10%;
+  --color-secondary: 240 21% 24%;
+  --color-secondary-foreground: 44 67% 94%;
+  --color-muted: 252 30% 20%;
+  --color-muted-foreground: 268 52% 82%;
+  --color-accent: 41 84% 60%;
+  --color-accent-foreground: 253 42% 10%;
   --color-destructive: 4 75% 58%;
   --color-destructive-foreground: 0 0% 98%;
-  --color-border: 258 28% 32%;
-  --color-input: 258 28% 32%;
-  --color-ring: 268 80% 67%;
+  --color-border: 252 28% 28%;
+  --color-input: 252 28% 28%;
+  --color-ring: 268 82% 67%;
 }
 
 [data-reduced-motion="true"] *,

@@ -26,10 +26,10 @@ export function PressSection() {
           align="center"
         />
         <FadeIn className="mx-auto max-w-4xl space-y-10 text-center">
-          <p className="text-lg leading-relaxed text-foreground/72 sm:text-xl">
+          <p className="text-lg leading-relaxed text-foreground/72 sm:text-xl dark:text-secondary-foreground/80">
             {content.body}
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 rounded-[2.5rem] border border-white/55 bg-white/80 px-10 py-8 uppercase tracking-[0.35em] text-xs text-foreground/55">
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 rounded-[2.5rem] border border-white/55 bg-white/80 px-10 py-8 uppercase tracking-[0.35em] text-xs text-foreground/55 dark:border-white/12 dark:bg-secondary/40 dark:text-secondary-foreground/80">
             {content.pressList.map((press) => (
               <span key={press}>{press}</span>
             ))}
@@ -39,19 +39,19 @@ export function PressSection() {
               <Link
                 key={social.href}
                 href={social.href}
-                className="inline-flex items-center justify-center rounded-full border border-primary/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-primary/70 transition hover:border-primary/40 hover:text-primary"
+                className="inline-flex items-center justify-center rounded-full border border-primary/20 px-5 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-primary/70 transition hover:border-primary/40 hover:text-primary dark:border-primary/35 dark:text-primary/80"
               >
                 {social.label}
               </Link>
             ))}
           </div>
           <div className="space-y-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-foreground/45">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-foreground/45 dark:text-secondary-foreground/70">
               Media enquiries?
             </p>
             <Link
               href={`mailto:${content.contact.email}`}
-              className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-accent-foreground shadow-[0_18px_45px_rgba(255,205,145,0.28)] transition hover:bg-accent/90"
+              className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-accent-foreground shadow-[0_18px_45px_rgba(255,205,145,0.28)] transition hover:bg-accent/90 dark:shadow-[0_22px_60px_rgba(246,189,120,0.35)]"
             >
               {content.contact.cta}
             </Link>
