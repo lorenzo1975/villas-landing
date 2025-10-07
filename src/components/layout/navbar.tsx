@@ -52,19 +52,19 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 pt-6 lg:pt-8" id="top">
       <div className="container">
-        <div className={`flex items-center justify-between px-5 py-3 transition-colors duration-300 ${scrolled ? "bg-navbar text-white backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_70px_rgba(88,63,140,0.16)] dark:border-white/12 dark:bg-navbar dark:shadow-[0_28px_90px_rgba(0,0,0,0.55)]" : ""}`}>
+        <div className={`flex items-center justify-between px-5 py-3 transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-xl rounded-full border border-gray-200/30 shadow-lg" : ""}`}>
           <Link
             href="#top"
-            className="font-sans text-2xl font-semibold uppercase tracking-[0.3em] text-primary"
+            className={`font-sans text-2xl font-semibold uppercase tracking-[0.3em] ${scrolled ? "text-gray-700" : "text-primary"}`}
           >
             Villas.co.th
           </Link>
-          <nav className={`hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.35em] md:flex md:pl-8 lg:pl-14 ${scrolled ? "text-white/80" : "text-foreground/50 dark:text-secondary-foreground"}`}>
+          <nav className={`hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.35em] md:flex md:pl-8 lg:pl-14 ${scrolled ? "text-gray-600" : "text-foreground/50 dark:text-secondary-foreground"}`}>
             {NAV_LINKS.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="transition hover:text-white dark:hover:text-accent"
+                className={`transition ${scrolled ? "hover:text-gray-900" : "hover:text-foreground dark:hover:text-accent"}`}
               >
                 <span className="hidden lg:inline">{item.label}</span>
                 <span className="lg:hidden">{item.short}</span>
@@ -73,7 +73,7 @@ export function Navbar() {
           </nav>
           <div className="flex items-center gap-3">
             {showThemeToggle ? (
-              <div className="hidden md:block text-foreground/70 dark:text-secondary-foreground">
+              <div className="hidden md:block">
                 <ThemeToggle />
               </div>
             ) : null}
@@ -81,14 +81,14 @@ export function Navbar() {
               asChild
               variant="secondary"
               size="lg"
-              className="hidden rounded-full border border-primary/20 bg-white/70 px-8 py-5 text-sm font-semibold uppercase tracking-[0.3em] text-foreground/75 transition hover:border-primary/30 hover:text-primary md:inline-flex dark:border-white/15 dark:bg-white/10 dark:text-secondary-foreground dark:hover:border-primary/40 dark:hover:text-accent"
+              className="hidden md:inline-flex rounded-full border border-primary/20 bg-white/70 px-8 py-5 text-sm font-semibold uppercase tracking-[0.3em] text-foreground/75 transition hover:border-primary/30 hover:text-primary dark:border-white/15 dark:bg-white/10 dark:text-secondary-foreground dark:hover:border-primary/40 dark:hover:text-accent"
             >
               <Link href="#join">Join waitlist</Link>
             </Button>
             <Button
               asChild
               size="lg"
-              className="hidden rounded-full bg-primary px-8 py-5 text-sm font-semibold uppercase tracking-[0.3em] text-primary-foreground shadow-[0_20px_45px_rgba(143,109,255,0.3)] transition hover:bg-primary/90 hover:shadow-[0_24px_60px_rgba(143,109,255,0.35)] md:inline-flex dark:bg-primary/80 dark:shadow-[0_28px_80px_rgba(112,88,204,0.45)]"
+              className="hidden md:inline-flex rounded-full bg-primary px-8 py-5 text-sm font-semibold uppercase tracking-[0.3em] text-primary-foreground shadow-lg transition hover:bg-primary/90 dark:bg-primary/80"
             >
               <Link href="#partner">Partner with us</Link>
             </Button>
@@ -111,10 +111,10 @@ export function Navbar() {
           <button
             type="button"
             aria-hidden="true"
-            className="absolute inset-0 bg-black/40"
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
             onClick={() => setIsMenuOpen(false)}
           />
-          <div className="absolute inset-x-4 top-20 rounded-3xl border border-white/40 bg-white/95 p-6 shadow-[0_32px_90px_rgba(88,63,140,0.32)] backdrop-blur-2xl dark:border-white/12 dark:bg-[rgba(34,24,58,0.92)] dark:shadow-[0_32px_110px_rgba(0,0,0,0.6)]">
+          <div className="absolute inset-x-4 top-20 rounded-3xl border border-gray-200/40 bg-white/95 p-6 shadow-lg backdrop-blur-xl dark:border-gray-700/50 dark:bg-gray-900/95">
             <nav className="space-y-4 text-sm font-semibold uppercase tracking-[0.35em] text-foreground/70 dark:text-secondary-foreground">
               {NAV_LINKS.map((item) => (
                 <Link
@@ -139,14 +139,14 @@ export function Navbar() {
               </Button>
               <Button
                 asChild
-                className="w-full rounded-full bg-primary text-primary-foreground shadow-[0_20px_45px_rgba(143,109,255,0.35)] hover:bg-primary/90 dark:bg-primary/80 dark:shadow-[0_28px_80px_rgba(112,88,204,0.45)]"
+                className="w-full rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 dark:bg-primary/80"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Link href="#partner">Partner with us</Link>
               </Button>
             </div>
             {showThemeToggle ? (
-              <div className="mt-6 flex justify-center text-foreground/70 dark:text-secondary-foreground">
+              <div className="mt-6 flex justify-center">
                 <ThemeToggle />
               </div>
             ) : null}

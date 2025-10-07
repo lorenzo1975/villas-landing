@@ -31,7 +31,7 @@ export function SectionHeading({
       {eyebrow ? (
         <span
           className={cn(
-            "text-[0.7rem] font-semibold uppercase tracking-[0.45em]",
+            "text-[0.7rem] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.45em]",
             isInverted ? "text-secondary-foreground/70" : "text-primary/80"
           )}
         >

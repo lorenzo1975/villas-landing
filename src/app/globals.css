@@ -31,12 +31,15 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     background-color: hsl(var(--color-background));
     color: hsl(var(--color-foreground));
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   .dark body {
@@ -64,8 +67,15 @@
     margin-right: auto;
     width: 100%;
     max-width: 80rem;
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+    }
   }
 
   @media (min-width: 768px) {

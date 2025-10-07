@@ -19,8 +19,10 @@ export function HowItWorksSection() {
   return (
     <section className="section-spacing relative overflow-hidden" id="how">
       <div aria-hidden className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(194,175,255,0.18),transparent_65%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-white/65 via-white/30 to-transparent" />
+              <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(143,109,255,0.4),rgba(143,109,255,0))] blur-[140px] dark:bg-[radial-gradient(circle,rgba(112,88,204,0.55),rgba(112,88,204,0))]" />
+      <div className="absolute bottom-[-45%] left-1/2 h-[420px] w-full max-w-[100vw] -translate-x-1/2 bg-[radial-gradient(circle_at_bottom,rgba(255,205,145,0.22),rgba(255,205,145,0))] blur-[120px] dark:bg-[radial-gradient(circle_at_bottom,rgba(246,189,120,0.28),rgba(246,189,120,0))]" />
+        {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(194,175,255,0.18),transparent_65%)]" /> */}
+        {/* <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-white/65 via-white/30 to-transparent" /> */}
       </div>
       <div className="container relative space-y-16">
         <SectionHeading
