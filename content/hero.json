@@ -24,6 +24,10 @@
       "value": "<12h"
     },
     {
+      "label": "Average owner response time",
+      "value": "<12h"
+    },
+    {
       "label": "Regions launching first",
       "value": "Phuket | Samui | Hua Hin"
     }

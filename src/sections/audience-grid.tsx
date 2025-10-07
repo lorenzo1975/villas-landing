@@ -13,7 +13,7 @@ const iconMap = {
   Home,
   Handshake,
   Building2,
-  Scale
+  Scale,
 };
 
 type IconKey = keyof typeof iconMap;
@@ -37,7 +37,7 @@ export function AudienceSection() {
             const IconComponent = iconMap[persona.icon as IconKey] ?? Users;
             return (
               <FadeIn delay={index * 0.08} key={persona.role}>
-                <Card className="group h-full overflow-hidden rounded-[2.5rem] border border-white/55 bg-white/85 p-8 shadow-[0_24px_80px_rgba(88,63,140,0.14)] backdrop-blur-xl transition hover:-translate-y-2 hover:shadow-[0_32px_90px_rgba(88,63,140,0.2)] dark:border-white/12 dark:bg-secondary/40 dark:shadow-[0_32px_100px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_40px_120px_rgba(0,0,0,0.5)]">
+                <Card className="group h-full overflow-hidden rounded-[2.5rem] border border-white/55 bg-white/85 p-8 shadow-[0_24px_80px_rgba(88,63,140,0.14)] backdrop-blur-xl transition hover:-translate-y-2 hover:shadow-[0_32px_90px_rgba(88,63,140,0.2)] dark:border-white/12 dark:bg-white/10 dark:shadow-[0_32px_100px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_40px_120px_rgba(0,0,0,0.5)]">
                   <CardHeader className="space-y-6">
                     <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary/25 bg-primary/10 text-primary dark:border-primary/35 dark:bg-primary/25 dark:text-primary/90">
                       <IconComponent className="h-6 w-6" />

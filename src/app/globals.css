@@ -22,6 +22,7 @@
   --color-border: 0 0% 90%;
   --color-input: 0 0% 90%;
   --color-ring: 45 100% 95%;
+  --color-navbar: 268 74% 60%;
   --radius-lg: 2.75rem;
   --radius-md: calc(var(--radius-lg) - 10px);
   --radius-sm: calc(var(--radius-lg) - 18px);
@@ -40,7 +41,8 @@
 
   .dark body {
     background-color: transparent;
-    background-image: linear-gradient(135deg, hsl(180 80% 40% / 0.3), hsl(300 100% 50% / 0.3));
+    background-image: radial-gradient(circle at top right,rgba(189,171,255,0.24),transparent 58%),
+                      radial-gradient(circle at bottom,rgba(255,205,145,0.22),transparent 70%);
     color: hsl(var(--color-foreground));
   }
 
@@ -159,7 +161,7 @@
   --color-popover: 180 10% 12%;
   --color-popover-foreground: 180 10% 85%;
   --color-primary: 330 80% 60%;
-  --color-primary-foreground: 330 80% 98%;
+  --color-primary-foreground: 0 0% 10%;
   --color-secondary: 180 80% 40%;
   --color-secondary-foreground: 180 80% 98%;
   --color-muted: 180 10% 18%;
@@ -223,6 +225,11 @@
         rgba(16, 185, 129, 0.35),
         transparent 45%
       );
+  }
+
+  .dark-gradient {
+    background: radial-gradient(circle at top right,rgba(189,171,255,0.24),transparent 58%),
+                radial-gradient(circle at bottom,rgba(255,205,145,0.22),transparent 70%);
   }
 }
 

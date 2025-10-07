@@ -12,7 +12,7 @@ export function FooterSection() {
         <div className="absolute inset-x-[-18%] bottom-[-30%] h-96 bg-[radial-gradient(circle_at_bottom,rgba(255,205,145,0.26),transparent_72%)] blur-[140px]" />
         <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/15 via-white/5 to-transparent" />
       </div>
-      <div className="container relative space-y-16 text-secondary-foreground">
+      <div className="container relative space-y-24 text-secondary-foreground">
         <SectionHeading
           eyebrow="Stay in touch"
           title="Thank you for exploring Villas.co.th"

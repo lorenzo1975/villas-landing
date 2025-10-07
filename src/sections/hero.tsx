@@ -46,7 +46,7 @@ export function HeroSection() {
               {hero.badges.map((badge) => (
                 <span
                   key={badge}
-                  className="inline-flex items-center rounded-full border border-primary/25 bg-white/75 px-4 py-2 text-foreground/65 dark:border-white/15 dark:bg-secondary/60 dark:text-secondary-foreground/80"
+                  className="inline-flex items-center rounded-full border border-primary/25 bg-white/75 px-4 py-2 text-foreground/65 dark:border-white/15 dark:bg-white/10 dark:text-secondary-foreground/80"
                 >
                   {badge}
                 </span>
@@ -57,16 +57,37 @@ export function HeroSection() {
         <FadeIn delay={0.2}>
           <div className="frosted-card relative rounded-[2.75rem] p-12 text-secondary dark:text-secondary-foreground">
             <div className="grid gap-10 sm:grid-cols-2">
-              {hero.stats.map((stat) => (
-                <div key={stat.label} className="space-y-2">
-                  <p className="text-4xl font-semibold text-foreground sm:text-5xl">{stat.value}</p>
+              <div className="flex gap-10">
+                <div className="flex flex-col items-center space-y-2">
+                  <p className="text-4xl font-semibold text-foreground sm:text-5xl">
+                    {hero.stats[0].value}
+                  </p>
                   <p className="text-xs font-semibold uppercase tracking-[0.35em] text-foreground/50">
-                    {stat.label}
+                    {hero.stats[0].label}
                   </p>
                 </div>
-              ))}
+                <div className="flex flex-col items-center space-y-2">
+                  <p className="text-4xl font-semibold text-foreground sm:text-5xl">
+                    {hero.stats[1].value}
+                  </p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.35em] text-foreground/50">
+                    {hero.stats[1].label}
+                  </p>
+                </div>
+                <div className="flex flex-col items-center space-y-2">
+                  <p className="text-4xl font-semibold text-foreground sm:text-5xl">
+                    {hero.stats[2].value}
+                  </p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.35em] text-foreground/50">
+                    {hero.stats[2].label}
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="pointer-events-none absolute inset-0 rounded-[2.75rem] border border-white/50" aria-hidden />
+            <div
+              className="pointer-events-none absolute inset-0 rounded-[2.75rem] border border-white/50"
+              aria-hidden
+            />
           </div>
         </FadeIn>
       </div>

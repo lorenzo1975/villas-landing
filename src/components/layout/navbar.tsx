@@ -52,19 +52,19 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 pt-6 lg:pt-8" id="top">
       <div className="container">
-        <div className={`flex items-center justify-between px-5 py-3 transition-colors duration-300 ${scrolled ? "bg-white/80 backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_70px_rgba(88,63,140,0.16)] dark:border-white/12 dark:bg-[rgba(30,20,50,0.82)] dark:shadow-[0_28px_90px_rgba(0,0,0,0.55)]" : ""}`}>
+        <div className={`flex items-center justify-between px-5 py-3 transition-colors duration-300 ${scrolled ? "bg-navbar text-white backdrop-blur-2xl rounded-full border border-white/40 shadow-[0_20px_70px_rgba(88,63,140,0.16)] dark:border-white/12 dark:bg-navbar dark:shadow-[0_28px_90px_rgba(0,0,0,0.55)]" : ""}`}>
           <Link
             href="#top"
             className="font-sans text-2xl font-semibold uppercase tracking-[0.3em] text-primary"
           >
             Villas.co.th
           </Link>
-          <nav className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.35em] text-foreground/50 md:flex md:pl-8 lg:pl-14 dark:text-secondary-foreground">
+          <nav className={`hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.35em] md:flex md:pl-8 lg:pl-14 ${scrolled ? "text-white/80" : "text-foreground/50 dark:text-secondary-foreground"}`}>
             {NAV_LINKS.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="transition hover:text-primary dark:hover:text-accent"
+                className="transition hover:text-white dark:hover:text-accent"
               >
                 <span className="hidden lg:inline">{item.label}</span>
                 <span className="lg:hidden">{item.short}</span>

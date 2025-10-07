@@ -44,6 +44,7 @@ const config = {
         border: "hsl(var(--color-border))",
         input: "hsl(var(--color-input))",
         ring: "hsl(var(--color-ring))",
+        navbar: "hsl(var(--color-navbar))",
       },
       borderRadius: {
         lg: "var(--radius-lg)",

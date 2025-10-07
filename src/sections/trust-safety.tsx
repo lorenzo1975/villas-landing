@@ -10,7 +10,7 @@ const iconMap = {
   ShieldCheck,
   Building,
   Stars,
-  Shield
+  Shield,
 };
 
 type IconKey = keyof typeof iconMap;
@@ -49,7 +49,10 @@ export function TrustSection() {
             );
           })}
         </div>
-        <FadeIn delay={0.2} className="rounded-[2.5rem] border border-white/55 bg-white/85 p-10 backdrop-blur-xl dark:border-white/12 dark:bg-white/10">
+        <FadeIn
+          delay={0.2}
+          className="rounded-[2.5rem] border border-white/55 bg-white/85 p-10 backdrop-blur-xl dark:border-white/12 dark:bg-white/10"
+        >
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-foreground/55 dark:text-secondary-foreground/70">
             {content.note}
           </p>
@@ -59,7 +62,10 @@ export function TrustSection() {
                 key={partner.name}
                 className="inline-flex items-center gap-2 rounded-full border border-white/55 bg-white/80 px-5 py-2 uppercase tracking-[0.28em] text-xs text-foreground/70 dark:border-white/12 dark:bg-white/15 dark:text-secondary-foreground/80"
               >
-                <span className="inline-block h-2 w-2 rounded-full bg-accent" aria-hidden />
+                <span
+                  className="inline-block h-2 w-2 rounded-full bg-accent"
+                  aria-hidden
+                />
                 {partner.name} - {partner.type}
               </span>
             ))}

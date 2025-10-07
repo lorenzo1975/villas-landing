@@ -6,9 +6,12 @@ import { isFeatureEnabled } from "@/lib/feature-flags";
 const content = getRoadmapContent();
 
 const statusStyles: Record<string, string> = {
-  active: "bg-primary text-primary-foreground dark:bg-primary/80 dark:text-primary-foreground",
-  upcoming: "bg-secondary/80 text-secondary-foreground dark:bg-secondary/60 dark:text-secondary-foreground",
-  future: "bg-white/45 text-foreground/60 dark:bg-white/10 dark:text-secondary-foreground/80"
+  active:
+    "bg-primary text-primary-foreground dark:bg-primary/80 dark:text-primary-foreground",
+  upcoming:
+    "bg-secondary/80 text-secondary-foreground dark:bg-secondary/60 dark:text-secondary-foreground",
+  future:
+    "bg-white/45 text-foreground/60 dark:bg-white/10 dark:text-secondary-foreground/80",
 };
 
 export function RoadmapSection() {
@@ -32,7 +35,7 @@ export function RoadmapSection() {
         <div className="grid gap-8 md:grid-cols-2">
           {content.milestones.map((milestone, index) => (
             <FadeIn delay={index * 0.1} key={milestone.title}>
-              <div className="group rounded-[2.5rem] border border-white/55 bg-white/85 p-10 shadow-[0_26px_80px_rgba(88,63,140,0.14)] backdrop-blur-xl transition hover:-translate-y-2 hover:shadow-[0_34px_100px_rgba(88,63,140,0.2)] dark:border-white/12 dark:bg-secondary/40 dark:shadow-[0_32px_110px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_38px_130px_rgba(0,0,0,0.5)]">
+              <div className="group rounded-[2.5rem] border border-white/55 bg-white/85 p-10 shadow-[0_26px_80px_rgba(88,63,140,0.14)] backdrop-blur-xl transition hover:-translate-y-2 hover:shadow-[0_34px_100px_rgba(88,63,140,0.2)] dark:border-white/12 dark:bg-white/10 dark:shadow-[0_32px_110px_rgba(0,0,0,0.45)] dark:hover:shadow-[0_38px_130px_rgba(0,0,0,0.5)]">
                 <div className="flex items-center justify-between gap-4 uppercase tracking-[0.3em] text-xs text-foreground/55 dark:text-secondary-foreground/75">
                   <span>{milestone.label}</span>
                   <span
